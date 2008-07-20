@@ -1,4 +1,5 @@
 Build.PL
+Bundle-DBD-PO.ppd
 Changes
 lib/Bundle/DBD/PO.pm
 MANIFEST			This list of files

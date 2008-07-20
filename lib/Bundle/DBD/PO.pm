@@ -3,7 +3,7 @@ package Bundle::DBD::PO;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 
@@ -12,6 +12,10 @@ __END__
 =head1 NAME
 
 Bundle::DBD::PO - A bundle to install all DBD::PO related modules
+
+$Id: PO.pm 53 2008-07-20 12:20:22Z steffenw $
+
+$HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/trunk/DBD-PO/lib/DBD/PO.pm $
 
 =head1 SYNOPSIS
 
