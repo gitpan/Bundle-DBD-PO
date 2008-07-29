@@ -11,10 +11,16 @@ Module::Build->new(
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
         DBI       => 0,
-        'DBD::PO' => '0.04',
+        'DBD::PO' => '0.05',
     },
     build_requires => {
         'Test::Simple' => 0, # for Test::More
+    },
+    recommends => {
+        # build
+        'Test::Pod'            => '1.14',
+        'Test::Pod::Coverage'  => '1.04',
+        'Test::More'           => 0,
     },
     create_makefile_pl   => 'traditional',
     recursive_test_files => 1,
