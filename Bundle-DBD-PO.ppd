@@ -1,0 +1,10 @@
+<SOFTPKG NAME="Bundle-DBD-PO" VERSION="0,05,0,0">
+    <TITLE>Bundle-DBD-PO</TITLE>
+    <ABSTRACT>Bundle::DBD::PO - A bundle to install all DBD::PO related modules</ABSTRACT>
+    <AUTHOR>Steffen Winkler &lt;steffenw@cpan.org&gt;</AUTHOR>
+    <IMPLEMENTATION>
+        <DEPENDENCY NAME="DBD-PO" VERSION="0,05,0,0" />
+        <DEPENDENCY NAME="DBI" VERSION="0,0,0,0" />
+        <CODEBASE HREF="PPM-Bundle-DBD-PO-0.05.tar.gz" />
+    </IMPLEMENTATION>
+</SOFTPKG>
