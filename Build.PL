@@ -7,7 +7,7 @@ Module::Build->new(
     module_name        => 'Bundle::DBD::PO',
     license            => 'perl',
     dist_abstract      => 'Bundle::DBD::PO - A bundle to install all DBD::PO related modules',
-    dist_author        => 'Steffen Winkler <steffenw@cpan.org>',
+    dist_author        => 'Steffen Winkler <steffenw at cpan.org>',
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
         DBI       => 0,

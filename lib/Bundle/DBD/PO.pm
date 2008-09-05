@@ -3,7 +3,7 @@ package Bundle::DBD::PO;
 use strict;
 use warnings;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 1;
 
@@ -40,15 +40,15 @@ L<Bundle::DBI>
 
 =head1 AUTHOR
 
-Steffen Winkler E<lt>F<STEFFENW@cpan.org>E<gt>
+Steffen Winkler E<lt>F<STEFFENW at cpan.org>E<gt>
 
 =head1 THANKS
 
 This bundle was created by ripping of Bundle::libnet
 created by Graham Barr E<lt>F<gbarr.ti.com>E<gt>,
 and radically simplified with some information
-from Jochen Wiedemann E<lt>F<joe@ipsoft.de>E<gt>.
+from Jochen Wiedemann E<lt>F<joe ar ipsoft.de>E<gt>.
 The template was then included in the DBI::DBD documentation
-by Jonathan Leffler E<lt>F<jleffler@informix.com>E<gt>.
+by Jonathan Leffler E<lt>F<jleffler at informix.com>E<gt>.
 
 =cut
