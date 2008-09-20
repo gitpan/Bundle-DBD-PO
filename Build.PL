@@ -11,7 +11,7 @@ Module::Build->new(
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
         DBI       => 0,
-        'DBD::PO' => '0.08',
+        'DBD::PO' => '0.09',
     },
     build_requires => {
         'Test::Simple' => 0, # for Test::More
