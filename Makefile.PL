@@ -2,15 +2,15 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'PL_FILES' => {},
-          'INSTALLDIRS' => 'site',
           'NAME' => 'Bundle::DBD::PO',
-          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Bundle/DBD/PO.pm',
           'PREREQ_PM' => {
-                           'DBD::PO' => '0.09',
-                           'Test::Simple' => 0,
-                           'DBI' => 0
-                         }
+                           'DBD::PO' => '0.10',
+                           'DBI' => 0,
+                           'Test::Simple' => 0
+                         },
+          'INSTALLDIRS' => 'site',
+          'EXE_FILES' => [],
+          'PL_FILES' => {}
         )
 ;
