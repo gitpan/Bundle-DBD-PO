@@ -1,5 +1,13 @@
 Revision history for Perl extension Bundle::DBD::PO.
 
+2.00  Tue Nov 15 21:00:00 2008
+- new Test 08_previous.t
+- change tests for plural fields
+- allow read/write of msgctxt
+- allow performance settings at use DBD::PO
+  like ':plural', ':previous', ':format' and 'allow_lost_blank_lines'
+- renew examples
+
 1.00  Tue Oct 21 21:20:00 2008
 - 1st stable version
 - POD
@@ -51,7 +59,7 @@ Revision history for Perl extension Bundle::DBD::PO.
 - fourth developer test version
 - fixed any problems with charset
 - changed API of method DBD::PO::db::split_header_msgstr
-- crash test and error message for mixed headers and lines 
+- crash test and error message for mixed headers and lines
 
 0.03  Wed Jul 23 19:00:00 2008
 - third developer test version

@@ -8,7 +8,7 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Bundle/DBD/PO.pm',
           'PREREQ_PM' => {
-                           'DBD::PO' => '1.00',
+                           'DBD::PO' => '2.00',
                            'Test::Simple' => 0,
                            'DBI' => 0
                          }
