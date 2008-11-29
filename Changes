@@ -1,5 +1,10 @@
 Revision history for Perl extension Bundle::DBD::PO.
 
+2.01  Sat Nov 29 22:00:00 2008
+- more comments in examples
+- new example using SQL join
+- better header acceptance
+
 2.00  Tue Nov 15 21:00:00 2008
 - new Test 08_previous.t
 - change tests for plural fields

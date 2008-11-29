@@ -1,4 +1,4 @@
-Bundle::DBD::PO version 2.00
+Bundle::DBD::PO version 2.01
 ============================
 
 This is a driver to read/write PO files.
