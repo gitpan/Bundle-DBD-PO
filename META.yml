@@ -1,6 +1,6 @@
 ---
 name: Bundle-DBD-PO
-version: 2.01
+version: 2.02
 author:
   - 'Steffen Winkler <steffenw at cpan.org>'
 abstract: 'Bundle::DBD::PO - A bundle to install all DBD::PO related modules'
@@ -8,7 +8,7 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
-  DBD::PO: 2.01
+  DBD::PO: 2.02
   DBI: 0
 build_requires:
   Test::Simple: 0
@@ -19,7 +19,7 @@ recommends:
 provides:
   Bundle::DBD::PO:
     file: lib/Bundle/DBD/PO.pm
-    version: 2.01
+    version: 2.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
