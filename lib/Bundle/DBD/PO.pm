@@ -3,7 +3,7 @@ package Bundle::DBD::PO;
 use strict;
 use warnings;
 
-our $VERSION = '2.02';
+our $VERSION = '2.03';
 
 1;
 
@@ -19,7 +19,7 @@ $HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/trunk/DBD-PO/lib/DBD
 
 =head1 VERSION
 
-2.02
+2.03
 
 =head1 SYNOPSIS
 
@@ -81,7 +81,7 @@ by Jonathan Leffler E<lt>F<jleffler at informix.com>E<gt>.
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2008,
+Copyright (c) 2008 - 2009,
 Steffen Winkler
 E<lt>F<steffenw at cpan.org>E<gt>.
 All rights reserved.
