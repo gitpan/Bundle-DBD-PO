@@ -3,7 +3,7 @@ package Bundle::DBD::PO;
 use strict;
 use warnings;
 
-our $VERSION = '2.05';
+our $VERSION = '2.06';
 
 1;
 
@@ -13,13 +13,13 @@ __END__
 
 Bundle::DBD::PO - A bundle to install all DBD::PO related modules
 
-$Id: PO.pm 53 2008-07-20 12:20:22Z steffenw $
+$Id: PO.pm 388 2009-05-21 04:36:35Z steffenw $
 
-$HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/trunk/DBD-PO/lib/DBD/PO.pm $
+$HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/trunk/Bundle-DBD-PO/lib/Bundle/DBD/PO.pm $
 
 =head1 VERSION
 
-2.05
+2.06
 
 =head1 SYNOPSIS
 
@@ -75,7 +75,7 @@ Steffen Winkler
 This bundle was created by ripping of Bundle::libnet
 created by Graham Barr E<lt>F<gbarr.ti.com>E<gt>,
 and radically simplified with some information
-from Jochen Wiedemann E<lt>F<joe ar ipsoft.de>E<gt>.
+from Jochen Wiedemann E<lt>F<joe at ipsoft.de>E<gt>.
 The template was then included in the DBI::DBD documentation
 by Jonathan Leffler E<lt>F<jleffler at informix.com>E<gt>.
 
