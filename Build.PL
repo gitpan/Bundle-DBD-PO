@@ -10,17 +10,19 @@ Module::Build->new(
     dist_author        => 'Steffen Winkler <steffenw at cpan.org>',
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
+        perl      => 5.006001,
         DBI       => 0,
-        'DBD::PO' => '2.06',
+        'DBD::PO' => '2.07',
     },
     build_requires => {
+        # Cwd          => 0, # perl dist
         'Test::Simple' => 0, # for Test::More
     },
     recommends => {
         # build
-        'Test::Pod'            => '1.14',
-        'Test::Pod::Coverage'  => '1.04',
-        'Test::More'           => 0,
+        'Test::Pod'           => '1.14',
+        'Test::Pod::Coverage' => '1.04',
+        'Test::More'          => 0,
     },
     create_makefile_pl   => 'traditional',
     recursive_test_files => 1,
