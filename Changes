@@ -1,5 +1,8 @@
 Revision history for Perl extension Bundle::DBD::PO.
 
+2.08  Sat Aug 29 11::00:00 2009
+- allow 6 plural forms now (Arabic)
+
 2.07  Fri May 29 21::00:00 2009
 - bugfix build dependencies
 
@@ -26,11 +29,14 @@ Revision history for Perl extension Bundle::DBD::PO.
 - better header acceptance
 
 2.00  Tue Nov 15 21:00:00 2008
-- new Test 08_previous.t
-- change tests for plural fields
+- Allow performance settings at use DBD::PO
+  like ':plural', ':previous', ':format' and 'allow_lost_blank_lines'.
+  To be full compatible to version 1.00 call
+  DBD::PO->init(qw(c-format php-format allow_lost_blank_lines))
+  before DBI->connect(...).
 - allow read/write of msgctxt
-- allow performance settings at use DBD::PO
-  like ':plural', ':previous', ':format' and 'allow_lost_blank_lines'
+- change tests for plural fields
+- new Test 08_previous.t
 - renew examples
 
 1.00  Tue Oct 21 21:20:00 2008

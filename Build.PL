@@ -10,9 +10,9 @@ Module::Build->new(
     dist_author        => 'Steffen Winkler <steffenw at cpan.org>',
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
-        perl      => 5.006001,
+        perl      => 5.006,
         DBI       => 0,
-        'DBD::PO' => '2.07',
+        'DBD::PO' => '2.08',
     },
     build_requires => {
         # Cwd          => 0, # perl dist
