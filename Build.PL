@@ -3,6 +3,8 @@ use warnings;
 
 use Module::Build;
 
+my $is_ppm = eval 'require ActivePerl::PPM::Package';
+
 Module::Build->new(
     module_name        => 'Bundle::DBD::PO',
     license            => 'perl',
@@ -15,14 +17,19 @@ Module::Build->new(
         'DBD::PO' => '2.08',
     },
     build_requires => {
-        # Cwd          => 0, # perl dist
-        'Test::Simple' => 0, # for Test::More
+        $is_ppm
+        ? (
+            'Test::Simple' => 0,
+        )
+        : (
+            Cwd          => 0, # perl dist
+            'Test::More' => 0, # dist Test::Simple
+        )
     },
     recommends => {
         # build
         'Test::Pod'           => '1.14',
         'Test::Pod::Coverage' => '1.04',
-        'Test::More'          => 0,
     },
     create_makefile_pl   => 'traditional',
     recursive_test_files => 1,

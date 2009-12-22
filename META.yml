@@ -1,6 +1,6 @@
 ---
 name: Bundle-DBD-PO
-version: 2.08
+version: 2.09
 author:
   - 'Steffen Winkler <steffenw at cpan.org>'
 abstract: 'Bundle::DBD::PO - A bundle to install all DBD::PO related modules'
@@ -14,16 +14,15 @@ requires:
   DBI: 0
   perl: 5.006
 recommends:
-  Test::More: 0
   Test::Pod: 1.14
   Test::Pod::Coverage: 1.04
 configure_requires:
-  Module::Build: 0.34
+  Module::Build: 0.340201
 provides:
   Bundle::DBD::PO:
     file: lib/Bundle/DBD/PO.pm
-    version: 2.08
-generated_by: Module::Build version 0.34
+    version: 2.09
+generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
