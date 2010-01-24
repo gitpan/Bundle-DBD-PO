@@ -27,7 +27,7 @@ find(
         untaint         => 1,
         wanted          => sub {
             -d and return;
-            $File::Find::name =~ m{/ \.svn / | \.mo \z}xms
+            $File::Find::name =~ m{/ \.svn /}xms
                 and return;
             $File::Find::name =~ m{
                 (
@@ -51,12 +51,12 @@ my @ignore_non_ascii = ();
 for my $file_name (sort @list) {
     my @lines;
     {
-        open my $file, '<: raw', $file_name
+        open my $file, '< :raw', $file_name
             or die "Cannnot open file $file_name";
         local $/ = ();
         my $text = <$file>;
         # repair last line without \n
-        $text =~ s{[^\x0D\x0A] \z}{\x0D\x0A}xms;
+        $text =~ s{([^\x0D\x0A]) \z}{$1\x0D\x0A}xms;
         @lines = split m{\x0A}, $text;
     }
 

@@ -3,7 +3,17 @@ use warnings;
 
 use Module::Build;
 
-my $is_ppm = eval 'require ActivePerl::PPM::Package';
+my $is_ppm
+    = (
+        # install using ppm
+        ! $ENV{AUTHOR_DIST}
+        && eval 'require ActivePerl::PPM::Package'
+    )
+    || (
+        # build ppm and ppd
+        $ENV{AUTHOR_DIST}
+        && $ENV{AUTHOR_DIST} eq 'ppm'
+    );
 
 Module::Build->new(
     module_name        => 'Bundle::DBD::PO',
@@ -12,9 +22,9 @@ Module::Build->new(
     dist_author        => 'Steffen Winkler <steffenw at cpan.org>',
     dist_version_from  => 'lib/Bundle/DBD/PO.pm',
     requires           => {
-        perl      => 5.006,
+        perl      => '5.006',
         DBI       => 0,
-        'DBD::PO' => '2.08',
+        'DBD::PO' => '2.10',
     },
     build_requires => {
         $is_ppm

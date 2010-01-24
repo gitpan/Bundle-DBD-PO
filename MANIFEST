@@ -1,6 +1,5 @@
 Build.PL
 Changes
-Debian_CPANTS.txt
 lib/Bundle/DBD/PO.pm
 MANIFEST			This list of files
 README
